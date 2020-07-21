@@ -1,0 +1,52 @@
+%Author: Wei-Lin (Linisac) Wu
+\documentclass[11pt, leqno]{report}
+
+
+%Packages
+\usepackage{enumerate}
+\usepackage{colonequals}
+\usepackage{titlesec}
+\usepackage[margin=2cm]{geometry}
+
+
+%New Commands
+\newcommand{\ds}[1]{{\displaystyle #1}}
+\newcommand{\mathtext}[1]{\mbox{\rm#1}}
+\newcommand{\sete}[1]{\{#1\}}
+\newcommand{\refitem}[1]{{\rm#1}}
+\newcommand{\mathmode}[1]{\begin{math}#1\end{math}}
+\newcommand{\paren}[1]{\left(#1\right)} %flexible parentheses
+\newcommand{\prmt}[2]{\mathrm{P}^{#1}_{#2}} %permutation (in combinatorics)
+\newcommand{\cmbn}[2]{\mathrm{C}^{#1}_{#2}} %combination (in combinatorics)
+\newcommand{\vset}{\mathit{V}} %vertex set (of a graph)
+\newcommand{\eset}{\mathit{E}} %edge set (of a graph)
+\newcommand{\matr}[1]{\mathbb{#1}} %matrix font
+\newcommand{\matri}{\matr{M}} %incidence matrix (of a graph)
+\newcommand{\matra}{\matr{A}} %adjacency matrix (of a graph)
+\newcommand{\matrb}{\matr{B}} %bipartite matrix (of a bipartite graph)
+\newcommand{\neigh}{\mathit{N}} %set of neighbours (of a vertex)
+\newcommand{\dgr}{\mathit{d}} %degree (of a vertex)
+\newcommand{\mindgr}{\mathit{\delta}} %minimum degree (of a graph)
+\newcommand{\maxdgr}{\mathit{\Delta}} %maximum degree (of a graph)
+\newcommand{\avgdgr}{\mathit{d}} %average degree (of a graph)
+\newcommand{\bipartite}[2]{#1[#2]}
+\newcommand{\defas}{\colonequals}
+
+
+%New Environments
+\newenvironment{quoteno}[1]{(#1)\hfill}{\hfill\phantom{(+)}}
+
+
+%if resetting of equation counter is required, use the instruction below:
+%\setcounter{equation}{0}
+
+\begin{document}
+\titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter}{.5em}{}
+\titleformat{\section}[hang]{\large\bfseries}{\thesection}{.5em}{}
+\input{chapter1}
+
+%\begin{thebibliography}{10}
+%\bibitem{EFT} H.-D.\ Ebbinghaus, J.\ Flum and W.\ Thomas \textsl{Mathematical Logic} 2nd edition, Springer, 1995.
+%%
+%\end{thebibliography}
+\end{document}
