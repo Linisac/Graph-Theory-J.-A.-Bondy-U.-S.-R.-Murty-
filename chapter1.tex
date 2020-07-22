@@ -53,7 +53,15 @@
 %%
 \item (SKIPPED).
 %%
-\item (INCOMPLETE) $\vnum(Q_n) = 2^n, \enum(Q_n) = 2\enum(Q_{n - 1}) + 2\vnum(Q_{n - 1})$.
+\item $\vnum(Q_n) = 2^n$, and
+\[
+\enum(Q_n) = 
+\begin{cases}
+1 & \mbox{if \mathmode{n = 1}} \cr
+2\enum(Q_{n - 1}) + 2\vnum(Q_{n - 1}) & \mbox{otherwise}. \cr
+\end{cases}
+\]
+Solving the recurrence equation by means of generating function, we have $\enum(Q_n) = n2^{n - 1}$.
 %%
 \item Tuples that differ in an odd or even number of coordinates are in different or the same parts (of a bipartite graph).
 %%
