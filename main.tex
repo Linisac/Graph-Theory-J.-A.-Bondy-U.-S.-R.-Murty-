@@ -5,6 +5,7 @@
 %Packages
 \usepackage{enumerate}
 \usepackage{colonequals}
+\usepackage{ifthen}
 \usepackage{titlesec}
 \usepackage[margin=2cm]{geometry}
 
@@ -12,7 +13,10 @@
 %New Commands
 \newcommand{\ds}[1]{{\displaystyle #1}}
 \newcommand{\mathtext}[1]{\mbox{\rm#1}}
+\newcommand{\defas}{\colonequals}
+\newcommand{\etc}{\ldots}
 \newcommand{\sete}[1]{\{#1\}}
+\newcommand{\card}[1]{\left|#1\right|}
 \newcommand{\refitem}[1]{{\rm#1}}
 \newcommand{\mathmode}[1]{\begin{math}#1\end{math}}
 \newcommand{\paren}[1]{\left(#1\right)} %flexible parentheses
@@ -29,8 +33,10 @@
 \newcommand{\mindgr}{\mathit{\delta}} %minimum degree (of a graph)
 \newcommand{\maxdgr}{\mathit{\Delta}} %maximum degree (of a graph)
 \newcommand{\avgdgr}{\mathit{d}} %average degree (of a graph)
+\newcommand{\subgraph}[2]{{#1[#2]}}
 \newcommand{\bipartite}[2]{#1[#2]}
-\newcommand{\defas}{\colonequals}
+\newcommand{\clique}[1][]{\ifthenelse{\equal{#1}{}}{\mathit{K}}{\mathit{K}_{#1}}}
+
 
 
 %New Environments

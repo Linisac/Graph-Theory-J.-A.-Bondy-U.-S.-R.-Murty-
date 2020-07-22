@@ -21,5 +21,25 @@
 %
 \item[\thesection.4] Since for every $v \in \vset(G)$, $\mindgr(G) \leq \dgr(v) \leq \maxdgr(G)$.
 %
+\item[\thesection.5]
+\begin{description}
+%%
+\item[$k = 0$.] Empty graphs.
+%%
+\item[$k = 1$.] Graphs consisting of separate pairs of vertices adjacent to each other.
+%%
+\item[$k = 2$.] Graphs consisting of one or more cycles.
+%%
+\end{description}
+%
+\item[\thesection.6]
+\begin{enumerate}[a)]
+%%
+\item Assume there are $n \geq 2$ people in this question. Model this group of people as a graph $G$ where each person is represented by a vertex and the friendship between two people by an edge connecting the two vertices for the two people. Suppose for a contradiction that no two people have the same number of friends or, in the graph $G$, each vertex $v$ has a different degree $\dgr(v)$. Since $0 \leq \dgr(v) \leq n - 1$ for all vertices $v \in \vset(G)$ and since $\card{\vset(G)} = n$, we have that there are exactly $n$ different vertex degrees in $G$: $0, \etc, n - 1$. Let us say the one vertex of degree $0$ (i.e.~an isolated vertex) is $v_0$, and denote by $G'$ the graph obtained by deleting $v_0$, namely $G' \defas \subgraph{G}{\vset(G) \setminus \sete{v_0}}$. Then $G'$ is a graph with $n - 1$ vertices and $\maxdgr(G') = n - 1$, which is a contradiction because $\maxdgr(G') \leq n - 2$.
+%%
+\item (INCOMPLETE) The first is like a five-ray star ($\clique[5]$ with the outermost $5$ edges removed).
+%%
+\end{enumerate}
+%
 \end{enumerate}
 %End of Section 1--------------------------------------------------------------------------------------------------------
